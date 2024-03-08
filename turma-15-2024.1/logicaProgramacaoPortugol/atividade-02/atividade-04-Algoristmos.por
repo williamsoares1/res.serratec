@@ -7,7 +7,8 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro vlG, vlKG, consumo = 50
+		inteiro vlG, consumo = 50
+		real vlKG
 		
 		escreva("Informe a quantidade de alimentos(KG): ")
 		leia(vlKG)
@@ -24,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 505; 
+ * @POSICAO-CURSOR = 279; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
