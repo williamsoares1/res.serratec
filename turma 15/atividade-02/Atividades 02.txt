@@ -1,0 +1,49 @@
+Lista 2 de exercícios:
+
+/**
+ * 1. Desenvolva um algoritmo que receba o salário de um funcionário, 
+ * calcule e mostre seu novo salário com reajuste de 15%.
+ */
+/**
+ * 2. Desenvolva um algoritmo que receba o valor de um depósito em poupança, 
+ * calcule e mostre o valor após um determinado número de meses de aplicação 
+ * na poupança, sabendo que a poupança rende 5% de juros simples ao mês. 
+ */
+/**
+ * 2.1. Desenvolva um algoritmo que receba o valor de um depósito em poupança, 
+ * calcule e mostre o valor após um determinado número de meses de aplicação 
+ * na poupança, sabendo que a poupança rende 5% de juros compostos ao mês. 
+ */
+/**
+ * 3. Desenvolva um algoritmo que receba um valor numérico inteiro, 
+ * calcule e mostre qual o quociente e o resto da divisão desse número por 3.
+ */
+/**
+ * 4. Desenvolva um algoritmo que receba uma quantidade de um alimento em quilos, 
+ * calcule e mostre quantos dias durará esse alimento 
+ * para uma pessoa que consome 50 gramas desse alimento por dia.
+ */
+/**
+ * 5. A turma C é composta de 60 alunos, e a turma D de 20 alunos. 
+ * Escreva um algoritmo que leia o percentual de alunos reprovados na turma C, 
+ * o percentual de aprovados na turma D, calcule e escreva:
+a) O número de alunos reprovados na turma C.
+b) O número de alunos reprovados na turma D.
+c) A percentagem de alunos reprovados em relação ao total de alunos das duas turmas.
+ */
+/**
+ * 6. Um motorista de taxi deseja calcular o rendimento de seu carro na praça. 
+ * Sabendo-se que o preço do combustível é de R$ 7,50 por litro, escreva um algoritmo para ler: 
+ * a marcação do odômetro (Km) no início do dia, a marcação (Km) no final do dia, 
+ * o número de litros de combustível gasto e o valor total (R$) recebido dos passageiros.
+Calcular e escrever: a média do consumo em Km/L e o lucro (líquido) do dia.
+ */
+/**
+ * 7- Crie um programa “termômetro” que lê uma temperatura em graus celsius, 
+ * e devolve sua equivalência na escala fahrenheit. (Use: F = C * 1,8 + 32)
+
+Exemplo:
+Temperatura em °C: 30°
+Temperatura em °F: 86°
+ */
+

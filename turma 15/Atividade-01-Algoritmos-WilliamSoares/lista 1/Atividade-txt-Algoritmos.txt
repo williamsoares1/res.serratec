@@ -1,0 +1,64 @@
+A) Pesquise e responda:
+
+1) O que é algoritmo?
+R:	conjunto das regras e procedimentos lógicos perfeitamente definidos que levam à solução de um problema em um número finito de etapas.
+
+
+2) O que é um programa de computador?
+R:	é um conjunto de instruções que descrevem uma tarefa a ser realizada por um computador.
+
+
+3) O que é uma variável?
+R:	É um objeto (uma posição, frequentemente localizada na memória) capaz de reter e representar um valor ou expressão.
+
+
+4) O que é o Portugol Studio?
+R:	É uma ferramenta capaz de ajudar pessoas que buscam aprender a programar e que falam o idioma português-BR, a entender e desenvolver a lógica de programação com uma sintaxe fácil e simples de entender.
+
+
+5) O que faz o comando escreva do Portugol?
+R:	Escreve no console da plataforma o que foi passado no "()" pelo desenvolvedor.
+
+
+6) O que faz o comando leia do Portugol?
+R:	Lê, diretamente do console, o valor passado e guarda na variavel referenciada no "()".
+
+
+7) Defina o que é tipo de variável
+R:	O tipo de uma variável define os valores que podem ser armazenados na variável.
+
+
+8) Explique o que são os tipos de variáveis do Portugol:
+
+   a. cadeia : Cadeia é uma sequência ordenada de caracteres (símbolos) escolhidos a partir de um conjunto pré-determinado.
+
+
+   b. inteiro : Uma variável do tipo inteiro pode ser entendida como uma variável que contém qualquer número que pertença ao conjunto dos números inteiros. Podem ser positivos, negativos ou nulos.
+
+
+   c. real : Uma variável do tipo real armazena um número real como uma fração decimal possivelmente infinita, como o número PI 3.1415926535. Os valores do tipo de dado real são números separados por pontos e não por virgulas.
+
+
+   d. logico : Uma variável do tipo logico é aquela que contém um tipo de dado, usado em operações lógicas, que possui somente dois valores, que são consideradas pelo Portugol como verdadeiro e falso.
+
+
+   e. caracter : A variável do tipo caracter é aquela que contém uma informação composta de apenas UM carácter alfanumérico ou especial. Exemplos de caracteres são letras, números, pontuações e etc.
+
+
+9) Dê exemplo:
+
+a. de entrada de um algoritmo
+R:	
+	escreva("Insira um número: ")
+	leia(num1)
+	escreva("Insira mais um:. ")
+	leia(num2)
+
+
+b. de processamento de um algoritm 
+R:	soma = num1 + num2
+
+
+c. de saída de um algoritmo
+R:	escreva("O resultado da soma é: " + soma + ".")
+

@@ -1,0 +1,9 @@
+1- fazer algoritmo que leia várias notas de alunos. Calcule e imprima a média da turma
+
+2- A concessionária de veículos “CARANGO” está vendendo os seus veículos com desconto. Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O desconto deverá ser calculado sobre o valor do veículo de acordo com o combustível (álcool – 25%, gasolina – 21% ou diesel –14%). Com valor do veículo zero encerra entrada de dados. Informe total de desconto e total pago pelos clientes.
+
+3- Ler três números, verificar se os mesmos podem formar os lados de um triângulo e caso formem, apresentar o tipo de triângulo. Se não formar um triângulo, informe e peça novas medidas.
+
+Equilátero = todos os lados iguais
+Escaleno = todos os lados diferentes
+Isósceles = dois lados iguais e um diferente
