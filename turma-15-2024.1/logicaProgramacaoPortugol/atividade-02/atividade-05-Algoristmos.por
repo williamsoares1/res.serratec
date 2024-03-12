@@ -12,17 +12,17 @@ programa
 	funcao inicio()
 	{
 		inteiro reprovadosC, reprovadosD
-		real totalRepC, totalAprD, turmaC = 60, turmaD = 20
+		real totalRepC, totalRepD, totalRep, turmaC = 60, turmaD = 20
 
 		escreva("Informe o numero de alunos reprovados na turma C(max = 60): ")
 		leia(reprovadosC)
-		escreva("Informe o numero de alunos reprovados na turma D(max = 20): ")
+		escreva("Informe o numero de alunos aprovados na turma D(max = 20): ")
 		leia(reprovadosD)
 
 		totalRepC = m.arredondar(((reprovadosC / turmaC) * 100), 2)
-		totalAprD = m.arredondar((((turmaD - reprovadosD) / turmaD) * 100),2)
+		totalRepD = m.arredondar((((turmaD - reprovadosD) / turmaD) * 100),2)
 
-		escreva(totalRepC + "% dos alunos da turma C foram reprovados e " + totalAprD + "% foram aprovados na turma D.")
+		escreva(totalRepC + "% dos alunos da turma C foram reprovados e " + totalRepD + "% foram reprovados na turma D.")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 832; 
+ * @POSICAO-CURSOR = 985; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

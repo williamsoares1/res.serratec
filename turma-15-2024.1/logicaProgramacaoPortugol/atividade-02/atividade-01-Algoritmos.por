@@ -5,6 +5,7 @@
 **/
 programa
 {
+  inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
@@ -15,9 +16,9 @@ programa
 		leia(salario)
 		limpa()
 		
-		reajusteAd = salario * porcentagem
-		reajusteDef = reajusteAd + salario
-		escreva("O resjuste salarial de +15% foi de: " + "R$ "  + reajusteAd + "\nO novo salario do funcionario é: " + "R$ " + reajusteDef + ".")
+		reajusteAd = m.arredondar(salario * porcentagem,2)
+		reajusteDef = m.arredondar(reajusteAd + salario,2)
+		escreva("O resjuste salarial de +15% foi de: R$ "  + reajusteAd + "\nO novo salario do funcionario é: R$ " + reajusteDef + ".")
 
 	}
 }

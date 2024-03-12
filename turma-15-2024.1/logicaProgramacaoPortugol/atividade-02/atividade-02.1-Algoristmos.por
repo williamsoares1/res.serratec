@@ -3,26 +3,26 @@
 //na poupança, sabendo que a poupança rende 5% de juros compostos ao mês.
 programa
 {
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
-		inteiro valorDep, mes, i
+		inteiro valorRec, mes, i
 		real porcentagem = 0.05, valorTotal, valorAd
 
 		escreva("Informe o valor de deposito: ")
-		leia(valorDep)
+		leia(valorRec)
 		escreva("Informe o numero de meses para aplicação: ")
 		leia(mes)
 		limpa()
 
-		valorAd = valorDep * porcentagem
-		valorTotal = valorDep
+		valorAd = valorRec * porcentagem
+		valorTotal = valorRec
 
 		para(i = 1; i <= mes; i++){
 			valorTotal = m.arredondar(valorTotal + valorAd, 2)
 			valorAd = valorTotal * porcentagem
-			escreva("O valor na poupança é de: R$ " + valorTotal + " após " + i + " mes(s) de aplicação.\n")
+			escreva("O valor na poupança é de: R$ " + valorTotal + " com " + i + " mes(s) de aplicação.\n")
 		}
 	}
 }
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 661; 
+ * @POSICAO-CURSOR = 571; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
