@@ -2,6 +2,7 @@
 
 programa
 {
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
@@ -18,7 +19,8 @@ programa
 			escolha(opcao)
 			{
 				caso 1: 
-				{	real notaRec, nota = 0.0, notaTotal, media 
+				{	
+					real notaRec, nota = 0.0, notaTotal, media 
 					
 					escreva("Quantas notas deseja informar? ")
 					leia(nrNotas)
@@ -35,7 +37,7 @@ programa
 						
 						se(i == nrNotas)
 						{
-							escreva("\n\nA media de notas da turma é: " + media + ".")
+							escreva("\n\nA media de notas da turma é: " + m.arredondar(media, 2) + ".")
 						}
 					}
 					comecar = falso
@@ -50,9 +52,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 629; 
+ * @POSICAO-CURSOR = 881; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

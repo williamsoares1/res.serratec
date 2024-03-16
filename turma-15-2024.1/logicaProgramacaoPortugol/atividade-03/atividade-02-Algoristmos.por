@@ -8,53 +8,51 @@ Informe total de desconto e total pago pelos clientes.
 */
 programa
 {
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
-		real alcool = 25, gasolina = 21, diesel = 14, vlCarro, desconto
+		real vlCarro, desconto, alcool = 25, gasolina = 21, diesel = 14
 		inteiro opcao
 
 		escreva("Informe o valor do veículo: ")
 		leia(vlCarro)
 		
 
-	se(vlCarro <= 0)
-	{
-		escreva("Valor invalido.")
-	}
-	senao
-	{	
-		escreva("\nInforme o tipo de combustivel do veiculo: \n1 - álcool\n2 - gasolina\n3 - diesel\n4 - fechar programa.\n")
-		leia(opcao)
-		
-		escolha(opcao)
-		{
-			caso 1: 
-				desconto = vlCarro * (alcool / 100)
-				vlCarro -= desconto
-				escreva("O valor a ser pago no veiculo é de R$ " + m.arredondar(vlCarro , 2) + " com o desconto de " + alcool + "%.")
-				pare
-			caso 2: 
-				desconto = vlCarro * (gasolina / 100)
-				vlCarro -= desconto
-				escreva("O valor a ser pago no veiculo é de R$ " + m.arredondar(vlCarro , 2) + " com o desconto de " + gasolina + "%.") 
-				pare
-			caso 3: 
-				desconto = vlCarro * (diesel / 100)
-				vlCarro -= desconto
-				escreva("O valor a ser pago no veiculo é de R$ " + m.arredondar(vlCarro , 2) + " com o desconto de " + alcool + "%.")
-				 pare
-			caso contrario: pare
+		se(vlCarro <= 0) escreva("Valor invalido.")
+		senao
+		{	
+			escreva("\nInforme o tipo de combustivel do veiculo: \n1 - álcool\n2 - gasolina\n3 - diesel\n4 - fechar programa.\n")
+			leia(opcao)
+			
+			escolha(opcao)
+			{
+				caso 1: 
+					desconto = vlCarro * (alcool / 100)
+					vlCarro -= desconto
+					escreva("O valor a ser pago no veiculo é de R$ " + m.arredondar(vlCarro , 2) + " com o desconto de " + alcool + "%.")
+					pare
+				caso 2: 
+					desconto = vlCarro * (gasolina / 100)
+					vlCarro -= desconto
+					escreva("O valor a ser pago no veiculo é de R$ " + m.arredondar(vlCarro , 2) + " com o desconto de " + gasolina + "%.") 
+					pare
+				caso 3: 
+					desconto = vlCarro * (diesel / 100)
+					vlCarro -= desconto
+					escreva("O valor a ser pago no veiculo é de R$ " + m.arredondar(vlCarro , 2) + " com o desconto de " + alcool + "%.")
+					 pare
+				caso contrario: pare
+			}
 		}
 	}
-}}
+}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 662; 
+ * @POSICAO-CURSOR = 1530; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
