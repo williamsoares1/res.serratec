@@ -1,0 +1,48 @@
+Learning Activity
+
+1 Translate the following English idiomatic expressions into Portuguese:
+
+a) "A piece of cake" - Uma fatia de bolo.
+b) "To let the cat out of the bag" - Deixe o gato sair da bolsa.
+c) "To hit the books" - Estudar com intensidade.
+
+
+2 Use the correct form of the verb to be:
+
+a) The computer __is__ machine that perform tasks or calculations.
+b) The motherboard __is__ the “brain” of your computer.
+c) These codes __are__ making me crazy.
+d) I __am__ a Java developer.
+e) This computer __is__built to perform a limited number of tasks.
+
+
+3 Conjugate the verb "to be" in the simple present tense for the following pronouns in English
+and Portuguese:
+
+a) I - am
+b) We - are
+c) They - are
+
+
+4 Answer the following questions:
+
+a) Como os computadores trabalham?
+	R: Por meio de 0 e 1, e, atualmente, existem programas que traduzem os comandos dados aos computadores a 	esses 0 e 1, para que os computadores consigam executar as taferas.(linguagem de maquina).
+
+b) Qual a peça mais importante?
+	R: A placa-mãe.
+
+c) Quais são os itens que compõem o computador?
+	R: Placa-mãe, HD e/ou SDD, Processador, Fonte de alimentação, memoria RAM, Ventoinhas e o gabinete.
+
+d) O que são computadores?
+	R: São conjuntos de Hardwares e Softwares capaz de executar variados tipos de tratamento de informações e de 	algoritmos.
+
+e) Por que você usa um computador?
+	R: Para executar tarefas que me auxiliam no dia-a-dia.
+
+5 Provide three adjectives to describe each of the following:
+
+a) Cloud computing - easy maintenance
+b) Artificial intelligence - expansive
+c) Cybersecurity - smart

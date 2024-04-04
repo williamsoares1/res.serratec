@@ -1,0 +1,4 @@
+Produza um pequeno texto digital sobre “What are computers?” baseado no texto da
+unidade com no mínimo de vinte palavras, em inglês (ou português, só nível básico).
+
+Computadores são dispositivos eletrônicos que evoluíram desde calculadoras mecânicas até microprocessadores, processando dados, facilitando a comunicação, automatizando tarefas e lidando com multimídia. O uso desses computadores se tornou essencial para a tecnologia nos dias de hoje.
