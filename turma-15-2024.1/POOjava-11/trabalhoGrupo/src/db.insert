@@ -1,0 +1,87 @@
+INSERT INTO Cliente (nome, cpf, dtnascimento, endereco, telefone) 
+VALUES 
+    ('João Silva', '123.456.789-00', '1980-05-15', 'Rua Principal, 123, Cidade Nova', '(22) 1234-5678'),
+    ('Maria Santos', '987.654.321-00', '1992-09-20', 'Av. das Flores, 456, Bairro Centro', '(22) 2345-6789'),
+    ('Antônio Oliveira', '111.222.333-00', '1975-12-10', 'Rua dos Pinheiros, 789, Vila Bela', '(22) 3456-7890'),
+    ('Ana Souza', '444.555.666-00', '1988-03-25', 'Travessa das Palmeiras, 321, Largo do Sol', '(21) 4567-8901'),
+    ('Pedro Pereira', '777.888.999-00', '1995-07-18', 'Alameda dos Ipês, 654, Praça Principal', '(21) 5678-9012'),
+    ('Carla Almeida', '333.222.111-00', '1983-11-30', 'Praça das Oliveiras, 987, Rua da Paz', '(22) 6789-0123'),
+    ('Fernando Lima', '666.777.888-00', '1970-01-05', 'Avenida dos Coqueiros, 159, Travessa da Esperança', '(21) 7890-1234'),
+    ('Amanda Costa', '999.888.777-00', '1990-06-12', 'Rodovia das Águas, 753, Estrada da Esperança', '(22) 8901-2345'),
+    ('José Carvalho', '222.333.444-00', '1978-08-22', 'Estrada do Sol, 852, Alameda dos Sonhos', '(22) 9012-3456'),
+    ('Juliana Fernandes', '555.444.333-00', '1986-04-08', 'Rua das Estrelas, 369, Beco da Lua', '(21) 0123-4567');
+
+INSERT INTO public.produto (descricao, vlcusto, vlvenda, quantidade, categoria) 
+VALUES 
+	('Arroz Integral 1kg', 5.50, 8.90, 15, 'Alimentos'),
+	('Feijão Carioca 1kg', 4.20, 7.50, 16, 'Alimentos'),
+	('Sabonete em Barra 90g', 1.80, 2.99, 20, 'Higiene e Beleza'),
+	('Detergente Líquido 500ml', 2.30, 4.50, 25, 'Limpeza'),
+	('Shampoo 200ml', 6.50, 10.90, 18, 'Higiene e Beleza'),
+	('Creme Dental 90g', 3.00, 5.20, 30, 'Higiene e Beleza'),
+	('Macarrão Espaguete 500g', 3.80, 6.50, 22, 'Alimentos'),
+	('Desinfetante 1L', 4.50, 8.00, 12, 'Limpeza'),
+	('Leite Integral 1L', 3.20, 5.90, 20, 'Alimentos'),
+	('Saco de Lixo 30L', 6.00, 9.50, 15, 'Limpeza'),
+	('Condicionador 200ml', 7.00, 11.50, 18, 'Higiene e Beleza'),
+	('Óleo de Soja 900ml', 4.80, 7.80, 25, 'Alimentos'),
+	('Amaciante de Roupas 2L', 8.50, 14.90, 10, 'Limpeza'),
+	('Café em Pó 500g', 8.00, 12.50, 20, 'Alimentos'),
+	('Papel Higiênico Folha Dupla', 6.20, 11.00, 15, 'Higiene e Beleza'),
+	('Açúcar Refinado 1kg', 3.90, 6.80, 18, 'Alimentos'),
+	('Água Sanitária 2L', 5.20, 9.50, 10, 'Limpeza'),
+	('Sabonete Líquido 250ml', 4.00, 7.20, 20, 'Higiene e Beleza'),
+	('Biscoito Recheado 150g', 2.50, 4.80, 28, 'Alimentos'),
+	('Desodorante Aerosol 150ml', 9.00, 15.80, 15, 'Higiene e Beleza'), 
+	('Notebook Dell Inspiron 15', 3500.00, 4200.00, 5, 'Computadores'),
+	('Smartphone Samsung Galaxy S21', 4000.00, 5200.00, 8, 'Smartphones'),
+	('Fone de Ouvido Bluetooth Sony WH-1000XM4', 1200.00, 1500.00, 12, 'Acessórios Eletrônicos'),
+	('Smart TV LG 55" 4K UHD', 3500.00, 4200.00, 3, 'Televisões'),
+	('Câmera Mirrorless Sony Alpha a7 III', 7000.00, 8500.00, 4, 'Câmeras'),
+	('Console de Video Game Xbox Series X', 4500.00, 5200.00, 6, 'Consoles de Jogos'),
+	('Impressora Multifuncional Epson EcoTank L3150', 1200.00, 1500.00, 9, 'Impressoras'),
+	('Roteador Wi-Fi TP-Link Archer C6', 200.00, 300.00, 15, 'Redes e Conectividade'),
+	('Mouse Gamer Logitech G502 HERO', 250.00, 350.00, 20, 'Periféricos de Computador'),
+	('Teclado Mecânico Corsair K95 RGB Platinum', 600.00, 750.00, 12, 'Periféricos de Computador'),
+	('Monitor Gamer Acer Predator XB271HU', 2500.00, 3000.00, 7, 'Monitores'),
+	('HD Externo Seagate Expansion 2TB', 400.00, 500.00, 10, 'Armazenamento'),
+	('Smartwatch Apple Watch Series 6', 3000.00, 3800.00, 6, 'Acessórios Eletrônicos'),
+	('Câmera de Segurança Intelbras Wi-Fi Mibo iC3', 300.00, 400.00, 12, 'Segurança Eletrônica'),
+	('Tablet Samsung Galaxy Tab S7', 2500.00, 3200.00, 5, 'Tablets'),
+	('Impressora 3D Creality Ender 3 Pro', 1500.00, 1800.00, 3, 'Impressoras 3D'),
+	('Fita LED Inteligente Philips Hue', 200.00, 250.00, 8, 'Iluminação Inteligente'),
+	('Carregador Portátil Anker PowerCore 20000', 150.00, 200.00, 15, 'Acessórios Eletrônicos'),
+	('Webcam Logitech C922 Pro', 300.00, 400.00, 10, 'Periféricos de Computador'),
+	('Placa de Vídeo NVIDIA GeForce RTX 3080', 5000.00, 6000.00, 4, 'Componentes de Computador');
+
+
+INSERT INTO public.pedido (dtemissao, dtentrega, observacao) 
+VALUES 
+	('2024-04-01', '2024-04-10', 'Pedido para cliente A'),
+	('2024-03-28', '2024-04-05', 'Urgente: entrega imediata'),
+	('2024-03-25', '2024-04-12', 'Pedido grande, necessita transporte especial'),
+	('2024-03-20', '2024-04-08', 'Cliente B solicitou alterações no pedido'),
+	('2024-03-15', '2024-04-20', 'Pedido internacional, prazo de entrega estendido'),
+	('2024-03-10', '2024-04-09', 'Cliente C pagará adiantado'),
+	('2024-03-05', '2024-04-15', 'Pedido padrão, entrega conforme contrato'),
+	('2024-03-01', '2024-04-18', 'Cliente D pediu para adicionar itens adicionais'),
+	('2024-02-25', '2024-04-11', 'Pedido especial, produtos sob encomenda'),
+	('2024-02-20', '2024-04-06', 'Cliente E solicita entrega em endereço alternativo');
+
+	
+INSERT INTO public.pedidoitens
+(idpedido, idproduto, idcliente_pedidoitens, qtproduto)
+VALUES
+	(1, 30, 1, 5),
+	(1, 21, 1, 2),
+	(2, 10, 1, 1),
+	(2, 3, 1, 2),
+	(2, 14, 5, 5),
+	(3, 2, 3, 7),
+	(4, 12, 4, 7),
+	(5, 5, 2, 9),
+	(6, 8, 1, 1),
+	(7, 4, 8, 1),
+	(8, 8, 7, 2),
+	(9, 9, 6, 2),
+	(10, 23, 10, 1);

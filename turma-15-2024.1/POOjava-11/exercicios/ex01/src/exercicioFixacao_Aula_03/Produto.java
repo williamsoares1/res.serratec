@@ -20,7 +20,7 @@ Instanciar os produtos até a resposta digitada for igual a ‘S’ conforme ima
 
 package exercicioFixacao_Aula_03;
 
-public class Produto {
+public class Produto{
 	private String descricao;
 	private double valor;
 	private int qtd;

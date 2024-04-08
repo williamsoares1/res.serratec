@@ -20,6 +20,6 @@ public class Principal {
 		System.out.println(a.toString());
 		System.out.println(g.toString());
 		System.out.println(d.toString());
-	}
+		}
 
 }

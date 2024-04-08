@@ -6,7 +6,6 @@ public class Principal {
 		System.out.println("Olá, mundo");
 		Date minhadata = new Date();
 		
-		
 		/*
 		String s = """				
 				
