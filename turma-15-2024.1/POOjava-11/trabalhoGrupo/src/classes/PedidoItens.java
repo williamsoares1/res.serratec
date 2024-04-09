@@ -25,8 +25,7 @@ public class PedidoItens {
 
 	@Override
 	public String toString() {
-		return  
-				 produto + "\nQuantidade: " + quantidade_produto + "\nValor total: " + Util.converterMonetario(valorUnitario)
+		return  Util.linhaSimples(20) + produto + "\nQuantidade: " + quantidade_produto + "\nValor total: " + Util.converterMonetario(valorUnitario)
 				+ "\nValor Desconto: " + Util.converterMonetario(valorDesconto) + "\n" + cliente + "\n" + pedido + "idPedidoitem: " 
 				+ idPedidoitem + "\n" + Util.linhaSimples(20)
 				+ "\n\n";

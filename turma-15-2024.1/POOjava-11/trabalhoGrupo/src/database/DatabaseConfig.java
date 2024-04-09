@@ -21,13 +21,13 @@ public class DatabaseConfig {
     public static void initializeDB() {
     	if(!FileManager.dbPropertiesExist()) {
 			Util.printMessage("Não foi possível encontrar o arquivo 'db.properties'. Isso deve significar que você está executando isso pela primeira vez!");
-			Util.printMessage("Deve criar um arquivo 'db.properties' e um novo banco de dados 'grupo2db'.");
+			Util.printMessage("\nDeve criar um arquivo 'db.properties' e um novo banco de dados 'grupo2db'.");
 			Scanner inputScanner = new Scanner(System.in);
 			String user = "", password = "";
 			boolean success = false;
 			while (!success) {
-			     user = Util.askInputLine("Digite seu usuario PostgreSQL: ", inputScanner);
-			     password = Util.askInputLine("Digite sua senha PostgreSQL: ", inputScanner);
+			     user = Util.askInputLine("\nDigite seu usuario PostgreSQL: ", inputScanner);
+			     password = Util.askInputLine("\nDigite sua senha PostgreSQL: ", inputScanner);
 			     
 			     String url = "jdbc:postgresql://localhost:5432/";
 			     try (Connection connection = DriverManager.getConnection(url, user, password);

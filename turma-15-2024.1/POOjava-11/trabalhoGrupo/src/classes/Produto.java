@@ -26,8 +26,8 @@ public class Produto {
 	// toString
 	@Override
 	public String toString() {
-		return 	"\n" + descricao + "\n\nidProduto: " + idProduto + "\nvalorCusto = "
-				+ Util.converterMonetario(valorCusto) + "\nValor Venda: " + Util.converterMonetario(valorVenda)
+		return 	"\n" + descricao + "\n\nidProduto: " + idProduto + "\nValor de custo = "
+				+ Util.converterMonetario(valorCusto) + "\nValor de venda: " + Util.converterMonetario(valorVenda)
 				+ "\nQuantidade no estoque:  " + quantidade + "\nCategoria: " + categoria;
 	}
 	
