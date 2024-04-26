@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header id="header" class="fs-5 esp border-0">
+      <nav class="p-md-3 navbar navbar-expand-md mx-md-5">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#"
+            >Viaje<spam class="text-warning-emphasis">Mais</spam></a
+          >
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Viaje<spam class="text-warning-emphasis">Mais</spam>
+              </h1>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <img src="../img/x-lg.svg" />
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 gap-5">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#sobre"
+                    >Sobre</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#contato">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#planos">Planos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#login" class="btn px-3">LOGIN</a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <img src="../img/list.svg" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="esp row d-flex flex-wrap flex-md-row flex-column">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade col-12 col-md-9"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/1508972438_image1.jpeg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/492507.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/362769-admin_1920x1080.jpg"
+              class="d-block w-100"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <aside
+        class="col-12 col-md-3 box-bg d-flex justify-content-center align-items-center p-2"
+      >
+        <div
+          class="bg-transparent d-flex flex-column p-xl-4 p-md-1 rounded text-center flex-wrap w-100"
+        >
+          <div class="p-2 d-flex flex-column" id="login">
+            <label for="email">Login: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="rounded border-0"
+            />
+          </div>
+          <div class="p-2 d-flex flex-column">
+            <label for="senha">Senha: </label>
+            <input
+              type="text"
+              id="senha"
+              name="senha"
+              class="rounded border-0"
+            />
+          </div>
+          <div class="mt-2 d-flex flex-column gap-2">
+            <button class="btn">LOGIN</button>
+            <button class="btn btnS">REGISTRE-SE</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="row gap-5 justify-content-center mt-5">
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/amazonia.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Pacote de Aventura na Floresta Amazônica</h1>
+          <p>
+            Explore a beleza natural da Amazônia com trilhas emocionantes,
+            passeios de barco pelo rio e hospedagem em eco-lodges. Inclui guias
+            especializados e atividades de observação da vida selvagem.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $1,500</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS" class="btn btn">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/parisluademel.webp" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Pacote de Lua de Mel em Paris</h1>
+          <p>
+            Desfrute de momentos românticos em Paris, a cidade do amor. Inclui
+            hospedagem em hotel boutique, passeios pelos pontos turísticos mais
+            icônicos e jantares românticos em restaurantes exclusivos.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $3,000</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/expedamazonia.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Expedição pela Amazônia</h1>
+          <p>
+            Explore a exuberante floresta amazônica com guias especializados.
+            Inclui hospedagem em cabanas e passeios de barco pelo rio,
+            observando a vida selvagem.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $2,500</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/expedRoma.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Roteiro Cultural em Roma</h1>
+          <p>
+            Descubra os tesouros históricos de Roma com este pacote cultural.
+            Inclui visitas guiadas ao Coliseu, ao Vaticano e a museus renomados,
+            além de degustação de gastronomia local.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $2,800</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img
+          src="../img/escapadaromantica.webp"
+          alt="Imagem do Pacote de Viagem"
+        />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Escapada Romântica em Santorini</h1>
+          <p>
+            Viva momentos inesquecíveis em Santorini, com vistas deslumbrantes
+            do mar Egeu. Inclui hospedagem em hotéis boutique, cruzeiro ao pôr
+            do sol e jantares românticos à beira-mar.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $3,200</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/peru.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Aventura nos Andes do Peru</h1>
+          <p>
+            Explore as paisagens deslumbrantes dos Andes peruanos com esta
+            aventura. Inclui trilhas até Machu Picchu, hospedagem em lodges nas
+            montanhas e experiências culturais únicas.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $2,800</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="esp mt-5 row d-flex justify-content-center align-items-center"
+      id="sobre"
+    >
+      <div class="col-md-3">
+        <img src="../img/4567321.jpg" class="rounded img-fluid" />
+      </div>
+      <div class="p-4 col-md-6">
+        <h1>Sobre nos</h1>
+        <p class="mt-4">
+          Bem-vindo à <strong>ViajeMais</strong>, sua escolha de confiança para
+          viagens há mais de 30 anos. Desde nossa fundação, nos dedicamos a
+          proporcionar experiências excepcionais que transformam simples viagens
+          em memórias inesquecíveis.
+        </p>
+
+        <p>
+          Com três décadas de experiência, construímos uma reputação sólida
+          baseada em profissionalismo, excelência e compromisso com nossos
+          clientes. Nosso objetivo é tornar cada viagem única e personalizada,
+          adaptada às necessidades e desejos de cada viajante.
+        </p>
+
+        <p>
+          O que nos destaca é nosso compromisso com a qualidade. Selecionamos
+          cuidadosamente os destinos, hotéis e atividades para garantir que
+          nossos clientes vivenciem o melhor que o mundo tem a oferecer, com
+          conforto, segurança e autenticidade.
+        </p>
+
+        <p>
+          Viaje conosco e permita-nos transformar seus sonhos em realidade, hoje
+          e para os próximos 30 anos e além.
+        </p>
+      </div>
+    </section>
+
+    <section class="row gap-5 justify-content-center mt-5">
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/africadosul.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Pacote de Aventura na África do Sul</h1>
+          <p>
+            Aventure-se pela incrível diversidade da África do Sul. Inclui
+            safáris emocionantes, hospedagem em lodges de luxo e visitas aos
+            principais pontos turísticos do país.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $2,700</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/italia.webp" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Pacote de Viagem Cultural pela Itália</h1>
+          <p>
+            Descubra a arte, a história e a gastronomia da Itália. Inclui
+            visitas a museus renomados, degustação de vinhos e hospedagem em
+            charmosos hotéis.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $3,200</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/costarica.webp" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Pacote de Ecoturismo na Costa Rica</h1>
+          <p>
+            Explore a incrível biodiversidade da Costa Rica. Inclui trilhas pela
+            floresta tropical, banhos em cachoeiras e hospedagem em ecolodges
+            sustentáveis.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $2,400</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/maldivas.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Escapada Romântica nas Ilhas Maldivas</h1>
+          <p>
+            Viva momentos inesquecíveis em meio ao paraíso das Maldivas. Inclui
+            hospedagem em bangalôs sobre a água, mergulhos em recifes de corais
+            e jantares à luz de velas.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $4,500</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/novazelandia.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Pacote de Aventura na Nova Zelândia</h1>
+          <p>
+            Explore a natureza selvagem da Nova Zelândia. Inclui bungee jumping,
+            caminhadas em trilhas deslumbrantes e hospedagem em lodges
+            pitorescos.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $3,000</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-sm-5 col-xl-3 d-flex flex-column gap-2 rounded border overflow-hidden"
+      >
+        <img src="../img/saara.jpg" alt="Imagem do Pacote de Viagem" />
+        <div class="p-2">
+          <h1 class="fs-4 mb-4">Pacote de Aventura no Deserto do Saara</h1>
+          <p>
+            Explore as vastas dunas e o estilo de vida nômade no Deserto do
+            Saara. Inclui passeios de camelo, acampamento sob as estrelas e
+            visitas a oásis isolados.
+          </p>
+        </div>
+        <div class="d-flex flex-row flex-wrap p-2 justify-content-around">
+          <h2>Preço: $2,000</h2>
+          <div>
+            <button class="btn">SAIBA MAIS</button>
+            <button class="btn ms-2 btnS">RESERVAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row p-4 gap-5 justify-content-center mt-5" id="planos">
+      <h1 class="text-center mb-3">Planos de assinatura</h1>
+      <div class="col-md-5 col-11">
+        <h2>Plano Ouro</h2>
+        <p>
+          <strong>Descrição:</strong> O plano Gold é projetado para os viajantes
+          mais exigentes, que buscam experiências exclusivas e de alto nível
+          durante suas jornadas pelo mundo.
+        </p>
+        <ul class="d-flex gap-2 flex-column">
+          <li>
+            Acesso privilegiado a pacotes de viagem premium para destinos
+            exclusivos em todo o mundo.
+          </li>
+          <li>
+            Ofertas especiais e descontos em hotéis de luxo, resorts e cruzeiros
+            de renome internacional.
+          </li>
+          <li>
+            Assistência personalizada 24/7 de agentes de viagens altamente
+            qualificados, disponíveis para atender às suas necessidades a
+            qualquer momento.
+          </li>
+          <li>
+            Prioridade de reserva em eventos e atrações turísticas populares,
+            garantindo acesso exclusivo a experiências únicas.
+          </li>
+          <li>
+            Benefícios adicionais, como upgrades de quarto gratuitos, traslados
+            VIP e experiências gastronômicas exclusivas.
+          </li>
+        </ul>
+        <p><strong>Preço Mensal:</strong> A partir de $X,XX/mês.</p>
+        <div class="d-flex justify-content-center m-3">
+          <button class="btn2 btnOuro">ASSINE-JÁ!</button>
+        </div>
+      </div>
+      <div class="col-md-5 col-11">
+        <h2>Plano Prata</h2>
+        <p>
+          <strong>Descrição:</strong> O plano Prata oferece uma opção acessível
+          para viajantes que buscam flexibilidade e comodidade em suas aventuras
+          pelo mundo.
+        </p>
+        <ul class="d-flex gap-2 flex-column">
+          <li>
+            Acesso a uma variedade de pacotes de viagem econômicos para destinos
+            populares em todo o mundo.
+          </li>
+          <li>
+            Descontos exclusivos em hotéis, passagens aéreas e aluguel de carros
+            para maximizar sua economia durante a viagem.
+          </li>
+          <li>
+            Assistência de agentes de viagens dedicados durante o horário
+            comercial para ajudar na reserva e planejamento da sua viagem.
+          </li>
+          <li>
+            Ofertas sazonais e promoções especiais para destinos selecionados,
+            proporcionando ainda mais oportunidades para economizar em suas
+            viagens.
+          </li>
+        </ul>
+        <p><strong>Preço Mensal:</strong> A partir de $X,XX/mês.</p>
+        <div class="d-flex justify-content-center m-3">
+          <button class="btn2 btnPrata">ASSINE-JÁ!</button>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="d-flex justify-content-around bg-dark text-white align-items-center"
+    >
+      <section class="row justify-content-center mt-5 p-4" id="contato">
+        <aside class="col-md-4">
+          <h1>Contate-nos</h1>
+          <p>
+            Estamos aqui para ajudá-lo a planejar sua próxima aventura. Entre em
+            contato conosco:
+          </p>
+          <ul>
+            <li><strong>Telefone:</strong> +XX XXXX-XXXX</li>
+            <li><strong>Email:</strong> info@viajemais.com</li>
+            <li>
+              <address>
+                Endereço: Rua Exemplo, 1234, Cidade, Estado, CEP XXXXX-XXX
+              </address>
+            </li>
+          </ul>
+          <p>
+            Nossa equipe terá o prazer de responder suas dúvidas e auxiliá-lo no
+            planejamento da sua viagem dos sonhos.
+          </p>
+        </aside>
+      </section>
+      <h3 class="d-block fs-5 p-2">Desenvolvido e desenhado por @eu</h3>
+    </footer>
+
+    <div class="m-3 position-fixed bottom-0 end-0 rounded-circle bg-dark p-3">
+      <a href="#header"><img src="../img/caret-up-fill.svg" /></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

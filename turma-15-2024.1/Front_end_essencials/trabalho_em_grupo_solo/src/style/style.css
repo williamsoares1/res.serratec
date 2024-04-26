@@ -1,0 +1,38 @@
+:root{
+    --corP: #fff;
+    --corS: #c0d6df;
+    --corT: #4f6d7a;
+    --corQ: #e8dab2;
+    --corQQ: #dd6e42;
+}
+
+.esp{
+    background-color: var(--corP);
+    border-bottom: 2px solid var(--corQQ);
+}
+.btn, .btn:hover{
+    background-color: var(--corT);
+    color: var(--corP);
+}
+.btnS, .btnS:hover{
+    background-color: var(--corQQ);
+}
+.box-bg{
+    background: linear-gradient(150deg, var(--corS) 80%, var(--corQQ) 50%);
+}
+.btn2{
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 13%;
+    font-weight: 600;
+}
+.btnOuro{
+    background: linear-gradient(135deg, gold, #ffb224);
+}
+.btnPrata{
+    background: linear-gradient(135deg, #adadad, #505050);
+}
+section.row{
+    --bs-gutter-x: 0rem;
+}
