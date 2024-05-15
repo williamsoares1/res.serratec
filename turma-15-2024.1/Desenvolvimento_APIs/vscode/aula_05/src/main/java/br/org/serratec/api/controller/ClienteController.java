@@ -36,6 +36,16 @@ public class ClienteController {
         return ResponseEntity.of(servico.obterPorId(id));
     }
 
+    @GetMapping("/nascimento")
+    public ResponseEntity<List<ClienteDTO>> obterPorAnoNasc(@RequestBody String nascimento){
+        return ResponseEntity.ok(servico.obterPorAnoNasc(nascimento));
+    }
+
+    @GetMapping("/nome")
+    public ResponseEntity<List<ClienteDTO>> obterPorNome(@RequestBody String nome){
+        return ResponseEntity.ok(servico.obterPorNome(nome));
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<ClienteDTO> cadastrarCliente(@Valid @RequestBody ClienteDTO cliente) {
