@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": "123",
+      "autor": "Eu",
+      "comentario": "Me de um real",
+      "likes": 0
+    },
+    {
+      "id": "6cd7",
+      "autor": "Eu",
+      "comentario": "Me de um real",
+      "likes": 0
+    },
+    {
+      "id": "790d",
+      "autor": "Eu",
+      "comentario": "Me de dois reais",
+      "likes": 0
+    },
+    {
+      "id": "4fc2",
+      "autor": "Eu",
+      "comentario": "Me de quatro reais",
+      "likes": 0
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
