@@ -1,31 +1,39 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Post from './components/Post/Post'
+import { api } from "./api/api"
 
 function App() {
   const [posts, setPosts] = useState([])
   const [autor, setAutor] = useState('')
   const [comentario, setComentario] = useState('')
-  const inputAutor = useRef(null)
 
-  // useEffect(()=>{
-  //   alert('Seja bem vindo!')
-  // }, [])
+  useEffect(() => {
+    getAll()
+  }, [])
 
-  // useEffect(() => {
-  //   if(posts.length == 0){
-  //     alert('Não há posts aqui')
-  //   }
-  // }, [posts])
+  const getAll = async () => {
+    const response = await api.get("/posts")
+    setPosts(response.data)
+  }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setPosts([{autor, comentario, likes: 0}, ...posts])
-    setAutor('')
-    setComentario('')
-    inputAutor.current.focus()
+  const deletePorId = async (id) => {
+    const response = await api.delete(`/posts/${id}`)
+    if(response.status == 200)
+      getAll()
+  }
+
+  const postPost = async () => {
+    const response = await api.post("/posts",
+    {
+      autor,
+      comentario,
+      likes: 0
+    })
+
+    getAll()
   }
 
   const handleAutorChange = (e) => {
@@ -36,10 +44,6 @@ function App() {
     setComentario(e.target.value)
   }
 
-  const handleDeleteClick = (i) => {
-    setPosts(posts.filter((post, index) => index != i))
-  }
-
   const handleLikeClick = (i) => {
     setPosts(posts.map((post, index) =>
       index == i ? {...post, likes: post.likes + 1} : post
@@ -48,10 +52,10 @@ function App() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={postPost}>
 
         <label htmlFor="autor">Autor: </label>
-        <input ref={inputAutor} value={autor} onChange={handleAutorChange} id='autor' type="text" />
+        <input value={autor} onChange={handleAutorChange} id='autor' type="text" />
         <p />
 
         <label htmlFor="comentario">Comentario: </label>
@@ -66,7 +70,7 @@ function App() {
         {posts.map((post, index) => 
           <Post 
             key={index}
-            index={index}
+            id={post.id}
             autor={post.autor}
             comentario={post.comentario}
 
@@ -74,7 +78,7 @@ function App() {
             darLikeFunc={() => handleLikeClick(index)}
 
             //abordagem 2
-            deleteFunc={handleDeleteClick}
+            deleteFunc={deletePorId}
             
             likes={post.likes}
           />

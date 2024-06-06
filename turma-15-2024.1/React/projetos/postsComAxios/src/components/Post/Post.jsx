@@ -1,4 +1,4 @@
-const Post = ({index, autor, comentario, deleteFunc, likes, darLikeFunc}) => {
+const Post = ({id, autor, comentario, deleteFunc, likes, darLikeFunc}) => {
     return (
         <>
             <div>
@@ -6,7 +6,7 @@ const Post = ({index, autor, comentario, deleteFunc, likes, darLikeFunc}) => {
                 <p>Comentario: {comentario}</p>
                 <button onClick={darLikeFunc}>Likes: {likes}</button>
                 <button onClick={() => {
-                    deleteFunc(index)
+                    deleteFunc(id)
                 }}>X</button>
             </div>
         </>
